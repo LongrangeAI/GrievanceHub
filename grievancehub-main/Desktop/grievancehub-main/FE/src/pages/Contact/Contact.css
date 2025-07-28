@@ -1,0 +1,135 @@
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #EAF2FB; /* Very light blue */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333; /* Dark text for readability */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #1E3A8A; /* Strong modern blue navbar */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff; /* White brand text */
+}
+
+.navbar-center {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  position: relative;
+  color: #ffffff; /* White nav links */
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+.navbar-right .nav-btn {
+  margin-left: 15px;
+  padding: 8px 20px;
+  background: #ffffff; /* White button */
+  color: #1E3A8A; /* Strong blue text */
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar-right .nav-btn:hover {
+  background: #E2E8F0; /* Light gray hover */
+}
+
+.contact-container {
+  flex: 1;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1E3A8A; /* Strong blue heading */
+}
+
+.contact-container p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #333333; /* Dark gray text */
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.contact-card {
+  background: #ffffff; /* White card on light blue bg */
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #1E3A8A; /* Strong blue */
+}
+
+.contact-card p,
+.contact-card a {
+  font-size: 0.95rem;
+  color: #333333; /* Dark text for contrast */
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #1E3A8A; /* Match navbar */
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff; /* White underline */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}

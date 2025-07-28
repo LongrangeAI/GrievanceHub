@@ -1,0 +1,63 @@
+/* === Admin Login Page - GrievanceHub Theme === */
+
+.admin-login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #EAF2FB; /* same light blue as dashboard */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333; /* dark readable text */
+}
+
+.admin-login-container {
+  background: #ffffff; /* solid white card */
+  padding: 40px 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #1E3A8A; /* match navbar blue */
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.admin-login-container h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #1E3A8A; /* brand blue heading */
+}
+
+.admin-login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-login-container input {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+.admin-login-container button {
+  background: #1E3A8A; /* strong blue button */
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.admin-login-container button:hover {
+  background: #162d66; /* darker blue hover */
+}

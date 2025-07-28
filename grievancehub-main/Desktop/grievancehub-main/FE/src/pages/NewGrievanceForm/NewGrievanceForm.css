@@ -1,0 +1,96 @@
+/* Page layout & modern blue background */
+.grievance-form-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #EAF2FB; /* Same light modern blue */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333; /* Dark text for readability */
+}
+
+/* Form container with solid white card */
+.grievance-form-container {
+  background: #ffffff; /* Solid white background like login card */
+  padding: 40px 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.grievance-form-container h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #1E3A8A; /* Brand blue heading */
+}
+
+/* Form layout */
+.grievance-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Select & textarea styled like inputs */
+.grievance-form-container select,
+.grievance-form-container textarea {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Subtle border for clarity */
+  border-radius: 25px;
+  font-size: 1rem;
+  background: #ffffff; /* Solid white */
+  color: #333333; /* Dark text */
+}
+
+.grievance-form-container select:focus,
+.grievance-form-container textarea:focus {
+  outline: none;
+  border-color: #1E3A8A; /* Optional: blue border focus */
+}
+
+.grievance-form-container textarea {
+  resize: vertical;
+  min-height: 100px;
+  border-radius: 15px;
+}
+
+.file-label {
+  text-align: left;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333333;
+}
+
+.grievance-form-container input[type="file"] {
+  margin-bottom: 20px;
+  color: #333333; /* File input label text color */
+}
+
+/* Submit button same style as other forms */
+.grievance-form-container button {
+  background: #1E3A8A; /* Strong brand blue */
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.grievance-form-container button:hover {
+  background: #162d66; /* Slightly darker on hover */
+}
+
+/* Footer consistent */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #1E3A8A; /* Same strong blue footer */
+  color: #ffffff;
+  font-size: 0.95rem;
+}

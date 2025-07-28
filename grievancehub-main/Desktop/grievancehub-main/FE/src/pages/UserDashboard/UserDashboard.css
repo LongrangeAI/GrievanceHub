@@ -1,0 +1,152 @@
+/* User Dashboard - same as Dashboard */
+
+.user-dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #EAF2FB; /* Same very light blue */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333; /* Dark text */
+}
+
+/* Fixed navbar same style */
+.user-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #1E3A8A; /* Same strong blue */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-center {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 15px;
+}
+
+.user-brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-link {
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-btn {
+  display: inline-block;
+  margin-left: 20px;
+  background: #ffffff;
+  color: #1E3A8A;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+}
+
+.nav-btn:hover {
+  background: #f5e2d3;
+}
+
+/* ✅ Updated Logout button — red background, white text */
+.logout-btn {
+  background-color: #ff0000 !important; /* force red */
+  color: #ffffff !important;            /* force white */
+  border: none;
+}
+
+.logout-btn:hover {
+  background-color: #cc0000 !important; /* darker red on hover */
+  color: #ffffff !important;            /* still white text */
+}
+
+.user-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 20px 40px; /* top padding for fixed navbar */
+  text-align: center;
+}
+
+.user-main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1E3A8A; /* Strong blue heading */
+}
+
+.user-main p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+.hero-btn {
+  background: #1E3A8A;
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  background: #162d66;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #1E3A8A; /* Match navbar */
+  color: #ffffff;
+  font-size: 0.95rem;
+  margin-top: auto;
+}

@@ -1,0 +1,92 @@
+/* === Admin Users Page - GrievanceHub Theme === */
+
+.admin-users {
+  min-height: 100vh;
+  padding: 12px 60px 60px; /* top padding for navbar if fixed */
+  background: #EAF2FB; /* same light blue background */
+  color: #333; /* dark text for readability */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-users h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1E3A8A; /* brand blue */
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #1E3A8A; /* same as navbar */
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.add-user-btn {
+  display: block;
+  margin: 0 auto 30px auto;
+  background: #1E3A8A; /* strong brand blue */
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-user-btn:hover {
+  background: #162d66; /* darker on hover */
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff; /* solid white table */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.users-table th,
+.users-table td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.users-table th {
+  background: #1E3A8A; /* brand blue heading row */
+  color: #fff;
+}
+
+.action-btn {
+  margin-right: 10px;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.edit-btn {
+  background: #1E3A8A; /* brand blue */
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background: #162d66;
+}
+
+.delete-btn {
+  background: #ff4d4d;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background: #e60000;
+}

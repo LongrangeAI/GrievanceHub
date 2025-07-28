@@ -1,0 +1,84 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #EAF2FB; /* Very light blue */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333; /* Dark text for readability */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #1E3A8A; /* Strong modern blue */
+}
+
+.nav-link {
+  position: relative;
+  color: #ffffff; /* White nav links on strong blue */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #ffffff; /* White underline */
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.hero-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+   font-family: sans-serif;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1E3A8A; /* Strong blue heading */
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #333333; /* Dark gray text */
+}
+
+.hero-btn {
+  background: #1E3A8A; /* Strong blue button */
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #162d66; /* Slightly deeper blue on hover */
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background: #1E3A8A; /* Match navbar */
+  color: #ffffff;
+  font-size: 0.95rem;
+}

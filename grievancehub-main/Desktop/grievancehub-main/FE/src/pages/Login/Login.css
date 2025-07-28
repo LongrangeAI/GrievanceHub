@@ -1,0 +1,95 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #EAF2FB; /* Strong modern blue background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333; /* Default text inside form is dark */
+}
+
+.login-container {
+  background: #ffffff; /* Solid white form */
+  padding: 40px 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background: #1E3A8A; /* Match brand blue */
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.login-container h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #1E3A8A; /* Strong blue heading for brand match */
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+.login-container button {
+  background: #1E3A8A; /* Strong blue button */
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.login-container button:hover {
+  background: #162d66; /* Slightly darker blue on hover */
+}
+
+.register-link {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #333333; /* Dark text for contrast */
+}
+
+.register-link a {
+  color: #1E3A8A; /* Link matches brand blue */
+  text-decoration: underline;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #19376D;
+  margin: 0;     /* <-- add this */
+  box-sizing: border-box; /* <-- ensures padding doesn't shrink width */
+}
+
+
+.login-page {
+  padding-top: 80px; /* adjust if needed to match navbar height */
+}

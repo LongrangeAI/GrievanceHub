@@ -1,0 +1,92 @@
+/* === Admin Grievance Detail === */
+
+.admin-grievance-detail {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #EAF2FB; /* Light blue background same as dashboard */
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 12px 40px 40px; /* top padding for navbar if any */
+}
+
+/* Heading */
+.admin-grievance-detail h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1E3A8A; /* Brand blue heading */
+}
+
+/* Footer same theme */
+.footer {
+  background: #1E3A8A;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.95rem;
+  margin-top: auto; /* sticky footer */
+}
+
+/* Card with clear contrast */
+.detail-card {
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.detail-card p {
+  margin: 15px 0;
+}
+
+/* Description box inside card */
+.description {
+  background: #f0f4fa; /* Light tint */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Doc link matches brand */
+.doc-link {
+  color: #1E3A8A;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+/* Status form */
+.status-form {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.status-form label {
+  font-weight: bold;
+  color: #1E3A8A;
+}
+
+.status-form select {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.status-form button {
+  background: #1E3A8A;
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.status-form button:hover {
+  background: #162d66; /* Slightly darker on hover */
+}

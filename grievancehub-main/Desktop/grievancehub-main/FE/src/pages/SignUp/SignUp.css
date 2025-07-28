@@ -1,0 +1,95 @@
+/* Modern blue theme for SignUp, matching Login */
+
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #EAF2FB; /* Same light blue background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333; /* Dark text inside form */
+  padding-top: 80px; /* Make space for fixed navbar */
+}
+
+.signup-container {
+  background: #ffffff; /* Solid white form */
+  padding: 40px 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.signup-container h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #1E3A8A; /* Strong brand blue heading */
+}
+
+.signup-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-container input {
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Add subtle border like login */
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+.signup-container button {
+  background: #1E3A8A; /* Strong brand blue button */
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.signup-container button:hover {
+  background: #162d66; /* Slightly darker blue on hover */
+}
+
+.login-link {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #333333; /* Dark text */
+}
+
+.login-link a {
+  color: #1E3A8A; /* Brand blue link */
+  text-decoration: underline;
+}
+
+/* Fixed navbar - same as Login page */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: #19376D; /* Brand dark blue */
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* If you have a footer for SignUp, reuse the same brand style */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background: #1E3A8A; /* Brand blue footer */
+  color: #ffffff;
+  font-size: 0.95rem;
+}
